@@ -50,6 +50,24 @@ If several states are active at the same time, the upper one in the table is sho
 | Purple | Blink (250ms on/off) | Scanning server device |
 
 
+## Pairing
+
+The remote connects to the server saved by pairing.
+
+1. Put the remote close to the server (within about 1m).
+2. Hold the button (BUTTON or BUTTON_EXT) and power on (or reset) the remote.
+3. The LED blinks yellow while pairing (about 5 seconds).
+   The remote saves the server with the strongest RSSI (-50dBm or more).
+4. The LED blinks green 3 times if succeeded, or shows red if failed.
+   The saved server is not changed if failed.
+
+The saved server can also be shown or changed by USB serial (115200bps).
+
+* `peer`: Show the saved server.
+* `peer set XX:XX:XX:XX:XX:XX`: Set the server address.
+* `peer clear`: Clear the saved server.
+
+
 ## Other documents
 
 * [GPIO](doc/gpio.md)

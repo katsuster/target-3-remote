@@ -1,8 +1,6 @@
 #ifndef C3_MAIN_H__
 #define C3_MAIN_H__
 
-#include <Arduino.h>
-
 #define VERSION                   "0.1.0"
 
 #define MSG_LEN                   64

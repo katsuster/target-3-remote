@@ -15,12 +15,12 @@ GPIO purpose of M5Stamp C3.
 
 | GPIO | Signal | Direction | Note |
 |--|--|--|--|
-| G0  | BUTTON_EXT   | Input  | 10k-ohm pull-up |
+| G0  | ---          | ---    | |
 | G1  | ---          | ---    | |
 | G2  | RGB LED      | Output | |
 | G3  | BUTTON       | Input  | Internal pull-up, On M5Stamp C3 |
-| G4  | ---          | ---    | |
-| G5  | ---          | ---    | |
+| G4  | BUTTON_EXT1  | Input  | 10k-ohm pull-up |
+| G5  | BUTTON_EXT2  | Input  | 10k-ohm pull-up |
 | G6  | ---          | ---    | |
 | G7  | ---          | ---    | |
 | G8  | ---          | ---    | |
@@ -34,7 +34,8 @@ GPIO purpose of M5Stamp C3.
 | Input signal | Low | High | Note |
 |--|--|--|--|
 | BUTTON       | Raise targets | Nothing | --- |
-| BUTTON_EXT   | Raise targets | Nothing | --- |
+| BUTTON_EXT1  | Raise targets | Nothing | --- |
+| BUTTON_EXT2  | Raise targets | Nothing | --- |
 
 GPIO pullup/pulldown voltage of M5Stamp C3.
 

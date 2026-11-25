@@ -55,7 +55,7 @@ If several states are active at the same time, the upper one in the table is sho
 The remote connects to the server saved by pairing.
 
 1. Put the remote close to the server (within about 1m).
-2. Hold the button (BUTTON or BUTTON_EXT) and power on (or reset) the remote.
+2. Hold the button (BUTTON, BUTTON_EXT1 or BUTTON_EXT2) and power on (or reset) the remote.
 3. The LED blinks yellow while pairing (about 5 seconds).
    The remote saves the server with the strongest RSSI (-50dBm or more).
 4. The LED blinks green 3 times if succeeded, or shows red if failed.

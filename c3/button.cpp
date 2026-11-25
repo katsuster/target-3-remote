@@ -9,7 +9,9 @@ static unsigned long btnChanged = 0;
 static bool btnArmed = false;
 
 static int readButton(void) {
-  if (digitalRead(GPIO_BUTTON) == LOW || digitalRead(GPIO_BUTTON_EXT) == LOW) {
+  if (digitalRead(GPIO_BUTTON) == LOW ||
+      digitalRead(GPIO_BUTTON_EXT1) == LOW ||
+      digitalRead(GPIO_BUTTON_EXT2) == LOW) {
     return LOW;
   }
 
@@ -18,7 +20,8 @@ static int readButton(void) {
 
 void initButton(void) {
   pinMode(GPIO_BUTTON, INPUT_PULLUP);
-  pinMode(GPIO_BUTTON_EXT, INPUT_PULLUP);
+  pinMode(GPIO_BUTTON_EXT1, INPUT_PULLUP);
+  pinMode(GPIO_BUTTON_EXT2, INPUT_PULLUP);
   delay(10);
 
   btnLast = readButton();

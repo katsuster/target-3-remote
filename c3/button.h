@@ -3,7 +3,9 @@
 
 //GPIO
 #define GPIO_BUTTON               3
-#define GPIO_BUTTON_EXT           0
+//External buttons on target-3-board remote (J3 pin 4: SW1, pin 3: SW2)
+#define GPIO_BUTTON_EXT1          4
+#define GPIO_BUTTON_EXT2          5
 
 //Timing
 #define BUTTON_DEBOUNCE_MS        20
